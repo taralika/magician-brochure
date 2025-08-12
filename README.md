@@ -1,5 +1,13 @@
 # Magician's Funny Money - Digital Recreation 🎩✨
 
+## 🎯 The Final Results
+
+### View the Magic Online!
+- **🌟 [Live Digital Funny Money](https://taralika.github.io/magician-brochure/magic-brochure-hifi.html)** - The fully recreated interactive version
+- **📄 [Printable PDF Version](https://taralika.github.io/magician-brochure/magic-brochure-hifi.pdf)** - Print your own funny money dollar!
+- **📜 [Original Torn Brochure Scan](https://taralika.github.io/magician-brochure/original-brochure/mister-illusion-brochure.pdf)** - What we started with
+- **📖 [This README on GitHub Pages](https://taralika.github.io/magician-brochure/)** - You are here!
+
 ## The Story
 
 My 8-year-old son attended a magic show by Mister Illusion and was absolutely thrilled when the magician gave him a special "funny money" dollar bill. He gave it to me (his dad) for safekeeping, and I tucked it into my pocket.
@@ -14,7 +22,7 @@ Using AI coding assistants (Claude Code and Cursor), my son embarked on a journe
 
 With a bit of help from dad on the printing side, we successfully transformed his digital creation back into a physical funny money dollar! 🎉
 
-## What's Inside
+## What's Inside This Repository
 
 - `magic-brochure-hifi.html` - The main HTML/CSS recreation of the funny money
 - `images/` - Magic trick illustrations used in the brochure
