@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mister Illusion - Funny Money Magic Brochure</title>
+    
+    <!-- Preconnect to Google Fonts for faster loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <style>
+        /* Optimized Google Fonts - Only loading what's actually used */
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Bangers&family=Bungee&family=Comic+Neue:wght@400;700&family=Fredoka:wght@400;700&display=swap');
+        
+        /* Font Usage Guide:
+         * - Anton: Dollar amounts, phone numbers, headers
+         * - Bungee: CHARLIEFASS title 
+         * - Bangers: Bottom slogans "Easy Magic Tricks You Can Do!"
+         * - Fredoka (400,700): Taglines and trick secrets
+         * - Comic Neue (400,700): Trick titles and descriptions
+         */
+        
+        :root {
+            /* Primary Money/Dollar Bill Colors */
+            --color-money-green-dark: #2d5a2d;
+            --color-money-green-medium: #4c864c;
+            --color-money-green-light: #5a8a5a;
+            --color-money-green-darker: #1f4a1f;
+            
+            /* Gradient Greens for Background */
+            --color-bill-green-1: #5eb863;
+            --color-bill-green-2: #6fc574;
+            --color-bill-green-3: #7ed285;
+            
+            /* Accent Colors */
+            --color-gold: #ffd700;
+            --color-red-accent: #dc143c;
+            --color-red-dark: #a91b1b;
+            --color-red-darkest: #8b0000;
+            
+            /* Text Colors */
+            --color-text-white: white;
+            --color-text-black: #000;
+            --color-text-blue: #1a237e;
+            --color-text-green: #2e7d32;
+            
+            /* UI Colors */
+            --color-bg-dark: #333;
+            --color-bg-white: white;
+            --color-banner-dark: #1a1a1a;
+            --color-banner-medium: #2a2a2a;
+            --color-banner-light: #4a4a4a;
+            --color-border-gray: #e8e8e8;
+            
+            /* Rainbow Gradient Colors */
+            --color-rainbow-pink: #ff006e;
+            --color-rainbow-orange: #ff4500;
+            --color-rainbow-yellow: #ffa500;
+            --color-rainbow-lime: #ffeb3b;
+            --color-rainbow-green: #adff2f;
+            --color-rainbow-cyan: #00ced1;
+            --color-rainbow-blue: #0000ff;
+            --color-rainbow-purple: #8b00ff;
+            --color-rainbow-magenta: #ff1493;
+            
+            /* Trick Card Colors */
+            --color-yellow-light: #fff9c4;
+            --color-yellow-main: #ffeb3b;
+            --color-yellow-medium: #ffd54f;
+            --color-orange-border: #ff6f00;
+            --color-red-star: #ff1744;
+            --color-blue-star: #2196f3;
+            --color-green-star: #4caf50;
+            --color-purple-star: #9c27b0;
+            --color-orange-star: #ff9800;
+            --color-cyan-star: #00bcd4;
+            --color-pink-hot: #ff0066;
+            
+            /* Common Shadows */
+            --shadow-standard: 4px 4px 8px rgba(0,0,0,0.3);
+            --shadow-strong: 5px 5px 10px rgba(0,0,0,0.6);
+            --shadow-text: 2px 2px 4px rgba(0,0,0,0.8);
+            --shadow-text-strong: 3px 3px 7px rgba(0,0,0,0.8);
+            
+            /* Additional Colors */
+            --color-beige-light: #f5f5dc;
+            --color-beige-medium: #e8e8c0;
+            --color-green-pure: #00ff00;
+            
+            /* Transparency Colors for Ornamental Elements */
+            --color-ornament-green-20: rgba(76, 134, 76, 0.2);
+            --color-ornament-green-15: rgba(76, 134, 76, 0.15);
+            --color-ornament-green-30: rgba(76, 134, 76, 0.3);
+            --color-dollar-sign: rgba(45, 90, 45, 0.15);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Reset semantic HTML5 elements to maintain visual appearance */
+        main, section, header, footer, article, address {
+            display: block;
+        }
+        
+        h1, h2, h3 {
+            font-size: inherit;
+            font-weight: inherit;
+            margin: 0;
+            padding: 0;
+        }
+        
+        address {
+            font-style: normal;
+        }
+        
+        body {
+            background: var(--color-bg-dark);
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+        .page {
+            width: 1056px;
+            height: 408px;
+            margin: 0 auto 2px;  /* Reduced gap for folding/gluing */
+            position: relative;
+            background: var(--color-bg-white);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            overflow: hidden;
+        }
+        
+        /* ===================== PAGE 1 - FRONT ===================== */
+        .page1 {
+            background: linear-gradient(135deg, 
+                var(--color-bill-green-1) 0%, 
+                var(--color-bill-green-2) 25%, 
+                var(--color-bill-green-3) 50%, 
+                var(--color-bill-green-2) 75%, 
+                var(--color-bill-green-1) 100%);
+            position: relative;
+            border: 12px solid var(--color-banner-dark);
+            box-shadow: 
+                inset 0 0 0 2px var(--color-banner-light),
+                inset 0 0 0 4px var(--color-banner-medium),
+                0 10px 30px rgba(0,0,0,0.5);
+        }
+        
+        /* Ornamental swirl patterns overlay */
+        .ornamental-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(ellipse at top left, transparent 40%, rgba(255,255,255,0.05) 70%),
+                radial-gradient(ellipse at top right, transparent 40%, rgba(255,255,255,0.05) 70%),
+                radial-gradient(ellipse at bottom left, transparent 40%, rgba(255,255,255,0.05) 70%),
+                radial-gradient(ellipse at bottom right, transparent 40%, rgba(255,255,255,0.05) 70%);
+            pointer-events: none;
+        }
+        
+        /* Dollar bill patterns */
+        .dollar-pattern {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            opacity: 0.1;
+            background-image: 
+                repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.1) 10px, rgba(255,255,255,0.1) 20px),
+                repeating-linear-gradient(-45deg, transparent, transparent 10px, rgba(0,0,0,0.05) 10px, rgba(0,0,0,0.05) 20px);
+        }
+        
+        /* Additional ornamental elements */
+        .filigree-corner {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            border: 2px solid var(--color-ornament-green-20);
+            border-radius: 0;
+            pointer-events: none;
+        }
+        
+        .filigree-corner::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            border: 1px dashed var(--color-ornament-green-15);
+            top: 10px;
+            left: 10px;
+            border-radius: 50%;
+        }
+        
+        .filigree-tl { 
+            top: 130px; 
+            left: 80px;
+            border-right: none;
+            border-bottom: none;
+        }
+        .filigree-tr { 
+            top: 130px; 
+            right: 80px;
+            border-left: none;
+            border-bottom: none;
+        }
+        .filigree-bl { 
+            bottom: 100px; 
+            left: 80px;
+            border-right: none;
+            border-top: none;
+        }
+        .filigree-br { 
+            bottom: 100px; 
+            right: 80px;
+            border-left: none;
+            border-top: none;
+        }
+        
+        /* Decorative dollar signs */
+        .floating-dollar {
+            position: absolute;
+            font-size: 24px;
+            color: var(--color-dollar-sign);
+            font-family: 'Anton', sans-serif;
+            font-weight: bold;
+            pointer-events: none;
+        }
+        
+        .floating-dollar1 { top: 150px; left: 120px; transform: rotate(-15deg); }
+        .floating-dollar2 { top: 150px; right: 120px; transform: rotate(15deg); }
+        .floating-dollar3 { bottom: 120px; left: 120px; transform: rotate(15deg); }
+        .floating-dollar4 { bottom: 120px; right: 120px; transform: rotate(-15deg); }
+        .floating-dollar5 { top: 50%; left: 80px; transform: rotate(-25deg); }
+        .floating-dollar6 { top: 50%; right: 80px; transform: rotate(25deg); }
+        
+        /* Decorative swirls in corners */
+        .swirl-decoration {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            pointer-events: none;
+        }
+        
+        .swirl-decoration::before,
+        .swirl-decoration::after {
+            content: '';
+            position: absolute;
+            border: 2px solid var(--color-ornament-green-30);
+            border-radius: 50%;
+        }
+        
+        .swirl-decoration::before {
+            width: 80px;
+            height: 80px;
+            top: 20px;
+            left: 20px;
+            border-style: dashed;
+        }
+        
+        .swirl-decoration::after {
+            width: 120px;
+            height: 120px;
+            top: 0;
+            left: 0;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            transform: rotate(45deg);
+        }
+        
+        .swirl-tl { top: 80px; left: 30px; }
+        .swirl-tr { top: 80px; right: 30px; transform: scaleX(-1); }
+        .swirl-bl { bottom: 80px; left: 30px; transform: scaleY(-1); }
+        .swirl-br { bottom: 80px; right: 30px; transform: scale(-1, -1); }
+        
+        /* FUNNY MONEY banners */
+        .funny-money-banner {
+            position: absolute;
+            top: 25px;
+            background: linear-gradient(to bottom, var(--color-banner-medium), var(--color-banner-dark));
+            color: var(--color-text-white);
+            padding: 8px 30px;
+            font-family: 'Anton', sans-serif;
+            font-size: 28px;
+            font-weight: 900;
+            letter-spacing: 4px;
+            border: 3px solid var(--color-border-gray);
+            box-shadow: 
+                5px 5px 10px rgba(0,0,0,0.5),
+                inset 0 1px 0 rgba(255,255,255,0.2),
+                inset 0 -1px 0 rgba(0,0,0,0.3);
+            text-shadow: var(--shadow-text);
+            z-index: 100;
+        }
+        
+        .funny-money-banner.left {
+            left: 100px;
+            transform: rotate(-2deg) perspective(200px) rotateX(5deg);
+        }
+        
+        .funny-money-banner.right {
+            right: 100px;
+            transform: rotate(2deg) perspective(200px) rotateX(5deg);
+        }
+        
+        /* Corner 1s with elaborate leaves */
+        .corner-number {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            z-index: 50;
+        }
+        
+        .number-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--color-beige-light), var(--color-beige-medium));
+            border: 5px solid var(--color-money-green-dark);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: var(--color-money-green-dark);
+            font-family: 'Anton', sans-serif;
+            box-shadow: 
+                0 0 0 2px var(--color-money-green-light),
+                0 0 0 3px var(--color-money-green-dark),
+                4px 4px 8px rgba(0,0,0,0.4);
+        }
+        
+        /* Elaborate leaves - Optimized with pseudo-elements */
+        .leaf-decoration {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        /* Create all 8 leaves using CSS only - no HTML needed */
+        .leaf-decoration::before,
+        .leaf-decoration::after,
+        .leaf-decoration .leaf-inner::before,
+        .leaf-decoration .leaf-inner::after,
+        .leaf-decoration .leaf-outer::before,
+        .leaf-decoration .leaf-outer::after,
+        .leaf-decoration .leaf-extra::before,
+        .leaf-decoration .leaf-extra::after {
+            content: '';
+            position: absolute;
+            width: 38px;
+            height: 22px;
+            background: linear-gradient(135deg, var(--color-money-green-dark), var(--color-money-green-medium));
+            border-radius: 0 100% 0 100%;
+            box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            border: 1px solid var(--color-money-green-darker);
+        }
+        
+        /* Position each leaf */
+        .leaf-decoration::before { top: 5px; left: 5px; transform: rotate(-45deg); }
+        .leaf-decoration::after { top: 5px; right: 5px; transform: rotate(45deg); }
+        .leaf-decoration .leaf-inner::before { bottom: 5px; left: 5px; transform: rotate(-135deg); }
+        .leaf-decoration .leaf-inner::after { bottom: 5px; right: 5px; transform: rotate(135deg); }
+        .leaf-decoration .leaf-outer::before { top: 15px; left: -8px; transform: rotate(-70deg) scale(0.8); }
+        .leaf-decoration .leaf-outer::after { top: 15px; right: -8px; transform: rotate(70deg) scale(0.8); }
+        .leaf-decoration .leaf-extra::before { bottom: 15px; left: -8px; transform: rotate(-110deg) scale(0.8); }
+        .leaf-decoration .leaf-extra::after { bottom: 15px; right: -8px; transform: rotate(110deg) scale(0.8); }
+        
+        .leaf-inner, .leaf-outer, .leaf-extra {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .corner-number.top-left { top: 15px; left: 15px; }
+        .corner-number.top-right { top: 15px; right: 15px; }
+        .corner-number.bottom-left { bottom: 15px; left: 15px; }
+        .corner-number.bottom-right { bottom: 15px; right: 15px; }
+        
+        /* Main center content */
+        .center-stage {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 900px;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 60;
+        }
+        
+        /* Left section with 3D box */
+        .left-stage {
+            width: 260px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .magic-box-wrapper {
+            position: absolute;
+            left: -80px;
+            top: -10px;
+            width: 100px;
+            height: 100px;
+        }
+        
+        .red-3d-cube {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--color-red-accent), var(--color-red-dark));
+            border: 3px solid var(--color-red-darkest);
+            transform: perspective(300px) rotateY(-25deg) rotateX(15deg);
+            box-shadow: 
+                8px 8px 15px rgba(0,0,0,0.5),
+                inset -3px -3px 6px rgba(0,0,0,0.4),
+                inset 2px 2px 4px rgba(255,255,255,0.2);
+        }
+        
+        .floating-stars {
+            position: absolute;
+            width: 150px;
+            height: 120px;
+            top: -10px;
+            left: -20px;
+            pointer-events: none;
+        }
+        
+        .golden-star {
+            position: absolute;
+            color: var(--color-gold);
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+            animation: twinkle 2s ease-in-out infinite;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(0.9); }
+        }
+        
+        .golden-star1 { 
+            top: 5px; 
+            left: 70px; 
+            font-size: 36px;
+            animation-delay: 0s; 
+        }
+        .golden-star2 { 
+            top: 25px; 
+            left: 95px; 
+            font-size: 28px;
+            animation-delay: 0.7s; 
+        }
+        .golden-star3 { 
+            top: 50px; 
+            left: 75px; 
+            font-size: 24px;
+            animation-delay: 1.4s; 
+        }
+        
+        .charlie-fass-title {
+            font-size: 42px;
+            font-weight: 900;
+            font-family: 'Bungee', 'Anton', sans-serif;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            margin-left: 15px;
+        }
+        
+        .charlie-text {
+            color: var(--color-red-accent);
+            text-shadow: 
+                4px 4px 0 var(--color-text-black),
+                5px 5px 10px rgba(0,0,0,0.6);
+        }
+        
+        .fass-text {
+            color: var(--color-gold);
+            text-shadow: 
+                4px 4px 0 var(--color-text-black),
+                5px 5px 10px rgba(0,0,0,0.6);
+        }
+        
+        .is-mister-illusion {
+            font-size: 22px;
+            color: var(--color-text-white);
+            font-weight: bold;
+            font-family: 'Fredoka', sans-serif;
+            text-shadow: var(--shadow-text-strong);
+            position: relative;
+            display: inline-block;
+            padding: 0 60px;
+            margin-left: 20px;
+            margin-top: -5px;
+            white-space: nowrap;
+        }
+        
+        .is-mister-illusion::before,
+        .is-mister-illusion::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            width: 55px;
+            height: 3px;
+            background: var(--color-bg-white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+        }
+        
+        .is-mister-illusion::before { left: 5px; }
+        .is-mister-illusion::after { right: 5px; }
+        
+        /* Center portrait */
+        .portrait-stage {
+            position: relative;
+            width: 250px;
+        }
+        
+        .portrait-oval-frame {
+            width: 180px;
+            height: 230px;
+            background: var(--color-text-black);
+            border: 8px solid var(--color-money-green-dark);
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 
+                0 0 0 2px var(--color-money-green-light),
+                0 0 0 4px var(--color-money-green-dark),
+                0 10px 25px rgba(0,0,0,0.6);
+            margin: 0 auto;
+        }
+        
+        .portrait-oval-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        /* Ornate leaves on portrait */
+        .portrait-leaves {
+            position: absolute;
+            bottom: 25px;
+            width: 100%;
+            pointer-events: none;
+        }
+        
+        .ornate-portrait-leaf {
+            position: absolute;
+            width: 70px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--color-money-green-dark), var(--color-money-green-medium));
+            border-radius: 0 100% 0 100%;
+            box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+            border: 2px solid var(--color-money-green-darker);
+        }
+        
+        .ornate-portrait-leaf.left {
+            left: -40px;
+            transform: rotate(-30deg);
+        }
+        
+        .ornate-portrait-leaf.right {
+            right: -40px;
+            transform: rotate(30deg) scaleX(-1);
+        }
+        
+        /* Right section */
+        .right-stage {
+            width: 260px;
+            text-align: center;
+        }
+        
+        .website-display,
+        .phone-display {
+            font-size: 32px;
+            font-weight: 900;
+            font-family: 'Anton', sans-serif;
+            margin-bottom: 8px;
+            color: var(--color-pink-hot);
+            text-shadow: 
+                -2px -2px 0 var(--color-gold),
+                2px -2px 0 var(--color-gold),
+                -2px 2px 0 var(--color-gold),
+                2px 2px 0 var(--color-gold),
+                5px 5px 8px rgba(0,0,0,0.6);
+            letter-spacing: 0.5px;
+        }
+        
+        /* Bottom taglines */
+        .tagline-banner {
+            position: absolute;
+            background: linear-gradient(to bottom, var(--color-banner-dark), var(--color-text-black));
+            color: var(--color-text-white);
+            padding: 8px 20px;
+            border: 3px solid white;
+            box-shadow: var(--shadow-strong);
+            z-index: 70;
+        }
+        
+        .tagline-banner.left-tagline {
+            bottom: 20px;
+            left: 130px;
+            transform: rotate(-1.5deg);
+        }
+        
+        .tagline-banner.right-tagline {
+            bottom: 20px;
+            right: 130px;
+            transform: rotate(1.5deg);
+        }
+        
+        .tagline-main {
+            font-size: 24px;
+            font-style: italic;
+            font-family: 'Fredoka', sans-serif;
+            margin-bottom: 2px;
+        }
+        
+        .tagline-sub {
+            font-size: 14px;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* ===================== HOVER INTERACTIONS ===================== */
+        /* Subtle hover effects for better interactivity */
+        
+        /* Magic trick cards - gentle lift on hover */
+        .magic-trick-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 6px 6px 12px rgba(0,0,0,0.4);
+        }
+        
+        /* Portrait frame - subtle glow on hover */
+        .portrait-oval-frame {
+            transition: box-shadow 0.3s ease;
+        }
+        
+        .portrait-oval-frame:hover {
+            box-shadow: 
+                0 0 0 2px var(--color-money-green-light),
+                0 0 0 4px var(--color-money-green-dark),
+                0 10px 25px rgba(0,0,0,0.6),
+                0 0 30px rgba(94, 184, 99, 0.3);
+        }
+        
+        /* Website and phone - pulse effect on hover */
+        .website-display,
+        .phone-display {
+            transition: transform 0.3s ease, text-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .website-display:hover,
+        .phone-display:hover {
+            transform: scale(1.05);
+            text-shadow: 
+                -2px -2px 0 var(--color-gold),
+                2px -2px 0 var(--color-gold),
+                -2px 2px 0 var(--color-gold),
+                2px 2px 0 var(--color-gold),
+                5px 5px 8px rgba(0,0,0,0.6),
+                0 0 20px rgba(255, 0, 102, 0.5);
+        }
+        
+        /* CHARLIEFASS title - subtle animation on hover */
+        .charlie-fass-title {
+            transition: transform 0.3s ease;
+            cursor: default;
+        }
+        
+        .charlie-fass-title:hover {
+            transform: scale(1.02);
+        }
+        
+        /* Corner numbers - gentle rotate on hover */
+        .corner-number {
+            transition: transform 0.3s ease;
+        }
+        
+        .corner-number:hover .number-circle {
+            transform: translate(-50%, -50%) rotate(10deg) scale(1.1);
+            transition: transform 0.3s ease;
+        }
+        
+        /* Funny Money banners - subtle shadow on hover */
+        .funny-money-banner {
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            cursor: default;
+        }
+        
+        .funny-money-banner:hover {
+            box-shadow: 
+                8px 8px 15px rgba(0,0,0,0.7),
+                inset 0 1px 0 rgba(255,255,255,0.3),
+                inset 0 -1px 0 rgba(0,0,0,0.4);
+        }
+        
+        /* Bottom slogan parts - fun bounce on hover */
+        .slogan-part {
+            transition: transform 0.3s ease;
+            cursor: default;
+        }
+        
+        .slogan-easy:hover {
+            transform: rotate(-5deg) scale(1.1);
+        }
+        
+        .slogan-youcan:hover {
+            transform: rotate(5deg) scale(1.1);
+        }
+        
+        /* Tagline banners - lift effect */
+        .tagline-banner {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: default;
+        }
+        
+        .tagline-banner:hover {
+            transform: translateY(-2px) rotate(0deg) !important;
+            box-shadow: 8px 8px 15px rgba(0,0,0,0.8);
+        }
+        
+        /* Star hover effect - make them sparkle */
+        .golden-star {
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+        
+        .floating-stars:hover .golden-star {
+            color: #ffeb3b;
+            filter: brightness(1.3);
+        }
+        
+        /* ===================== PAGE 2 - BACK ===================== */
+        .page2 {
+            background: linear-gradient(135deg, 
+                var(--color-rainbow-pink) 0%, var(--color-rainbow-orange) 10%, var(--color-rainbow-yellow) 20%, var(--color-rainbow-lime) 30%, 
+                var(--color-rainbow-green) 40%, var(--color-green-pure) 50%, var(--color-rainbow-cyan) 60%, var(--color-rainbow-blue) 70%, 
+                var(--color-rainbow-purple) 80%, var(--color-rainbow-magenta) 90%, var(--color-rainbow-pink) 100%);
+            padding: 12px;
+            position: relative;
+        }
+        
+        /* Multi-colored corner stars */
+        .corner-stars-group {
+            position: absolute;
+            z-index: 100;
+        }
+        
+        .star-pair {
+            font-size: 40px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+        }
+        
+        .star-solid { margin-right: 8px; }
+        
+        .corner-stars-group.csg-tl { top: 15px; left: 15px; }
+        .corner-stars-group.csg-tl .star-solid { color: var(--color-rainbow-lime); }
+        .corner-stars-group.csg-tl .star-outline { color: var(--color-red-star); }
+        
+        .corner-stars-group.csg-tr { top: 15px; right: 15px; }
+        .corner-stars-group.csg-tr .star-solid { color: var(--color-blue-star); }
+        .corner-stars-group.csg-tr .star-outline { color: var(--color-green-star); }
+        
+        .corner-stars-group.csg-bl { bottom: 15px; left: 15px; }
+        .corner-stars-group.csg-bl .star-solid { color: var(--color-purple-star); }
+        .corner-stars-group.csg-bl .star-outline { color: var(--color-orange-star); }
+        
+        .corner-stars-group.csg-br { bottom: 15px; right: 15px; }
+        .corner-stars-group.csg-br .star-solid { color: var(--color-cyan-star); }
+        .corner-stars-group.csg-br .star-outline { color: var(--color-red-star); }
+        
+        /* Main yellow panel */
+        .tricks-main-panel {
+            background: linear-gradient(to bottom, 
+                var(--color-yellow-light) 0%, var(--color-yellow-main) 15%, var(--color-yellow-medium) 50%, var(--color-yellow-main) 85%, var(--color-yellow-light) 100%);
+            border: 7px solid var(--color-orange-border);
+            border-radius: 30px;
+            padding: 10px;
+            padding-bottom: 35px;
+            height: 100%;
+            position: relative;
+            box-shadow: 
+                inset 0 0 30px rgba(255,255,255,0.6),
+                0 0 20px rgba(0,0,0,0.4);
+        }
+        
+        /* Tricks grid layout */
+        .tricks-grid-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 8px;
+            height: calc(100% - 40px);
+            position: relative;
+            z-index: 50;
+            padding: 5px;
+        }
+        
+        /* Individual trick card */
+        .magic-trick-card {
+            background: var(--color-bg-white);
+            border: 3px solid var(--color-text-black);
+            border-radius: 12px;
+            padding: 8px;
+            padding-right: 120px;
+            box-shadow: var(--shadow-standard);
+            position: relative;
+            overflow: hidden;
+            min-height: 170px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        
+        h2.trick-title-row {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-bottom: 3px;
+        }
+        
+        .trick-bullet {
+            color: var(--color-red-star);
+            font-size: 24px;
+        }
+        
+        .trick-title-text {
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            font-family: 'Comic Neue', cursive;
+            color: var(--color-text-black);
+        }
+        
+        p.trick-description-text {
+            color: var(--color-text-blue);
+            font-size: 13px;
+            font-weight: bold;
+            margin-bottom: 3px;
+            font-family: 'Comic Neue', cursive;
+            line-height: 1.15;
+        }
+        
+        h3.trick-secret-title {
+            color: var(--color-text-green);
+            font-weight: bold;
+            font-size: 13px;
+            text-decoration: underline;
+            margin-bottom: 2px;
+            font-family: 'Fredoka', sans-serif;
+        }
+        
+        p.trick-secret-details {
+            font-size: 12px;
+            line-height: 1.2;
+            font-family: Arial, sans-serif;
+            color: var(--color-text-black);
+        }
+        
+        .trick-illustration {
+            position: absolute;
+            top: 8px;
+            right: 8px;
+            width: 110px;
+            height: 100px;
+            border: 2px solid var(--color-orange-border);
+            border-radius: 5px;
+            background: linear-gradient(to bottom, var(--color-yellow-light), var(--color-yellow-main));
+            padding: 3px;
+            object-fit: contain;
+        }
+        
+        /* Center magic hat and rabbit */
+        .magic-centerpiece-display {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 200;
+            text-align: center;
+            pointer-events: none;
+        }
+        
+        /* Magic bunny with hat illustration */
+        .magic-bunny-container {
+            position: relative;
+            width: 120px;
+            height: 100px;
+            margin: 0 auto;
+        }
+        
+        .magic-hat-on-bunny {
+            position: absolute;
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            z-index: 2;
+            filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.7));
+        }
+        
+        .magic-bunny {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 45px;
+            z-index: 1;
+            filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.7));
+        }
+        
+        .bunny-wand {
+            position: absolute;
+            top: 35px;
+            right: 15px;
+            font-size: 30px;
+            transform: rotate(-25deg);
+            z-index: 3;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.6));
+        }
+        
+        /* Bottom slogan */
+        .bottom-slogan-area {
+            position: absolute;
+            bottom: -5px;
+            left: 47%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 40px;
+            z-index: 80;
+        }
+        
+        .slogan-part {
+            font-size: 30px;
+            font-weight: 900;
+            font-family: 'Bangers', cursive;
+            color: var(--color-text-black);
+            text-shadow: 
+                2px 2px 0 var(--color-text-white),
+                3px 3px 0 var(--color-red-star),
+                5px 5px 8px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+        }
+        
+        .slogan-easy {
+            transform: rotate(-5deg);
+        }
+        
+        .slogan-youcan {
+            transform: rotate(5deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- PAGE 1: FRONT -->
+    <main class="page page1" role="main" aria-label="Mister Illusion Funny Money Brochure Front">
+        <!-- Ornamental overlay -->
+        <div class="ornamental-overlay" aria-hidden="true"></div>
+        <div class="dollar-pattern" aria-hidden="true"></div>
+        
+        <!-- Decorative corner swirls -->
+        <div class="swirl-decoration swirl-tl" aria-hidden="true"></div>
+        <div class="swirl-decoration swirl-tr" aria-hidden="true"></div>
+        <div class="swirl-decoration swirl-bl" aria-hidden="true"></div>
+        <div class="swirl-decoration swirl-br" aria-hidden="true"></div>
+        
+        <!-- Additional decorative elements -->
+        <div class="filigree-corner filigree-tl" aria-hidden="true"></div>
+        <div class="filigree-corner filigree-tr" aria-hidden="true"></div>
+        <div class="filigree-corner filigree-bl" aria-hidden="true"></div>
+        <div class="filigree-corner filigree-br" aria-hidden="true"></div>
+        
+        <!-- Floating dollar signs -->
+        <span class="floating-dollar floating-dollar1" aria-hidden="true">$</span>
+        <span class="floating-dollar floating-dollar2" aria-hidden="true">$</span>
+        <span class="floating-dollar floating-dollar3" aria-hidden="true">$</span>
+        <span class="floating-dollar floating-dollar4" aria-hidden="true">$</span>
+        <span class="floating-dollar floating-dollar5" aria-hidden="true">$</span>
+        <span class="floating-dollar floating-dollar6" aria-hidden="true">$</span>
+        
+        <!-- FUNNY MONEY Banners -->
+        <header class="funny-money-banner left" aria-label="Funny Money banner">FUNNY MONEY</header>
+        <header class="funny-money-banner right" aria-label="Funny Money banner">FUNNY MONEY</header>
+        
+        <!-- Corner 1s with elaborate leaves -->
+        <div class="corner-number top-left" aria-hidden="true">
+            <div class="number-circle">1</div>
+            <div class="leaf-decoration">
+                <div class="leaf-inner"></div>
+                <div class="leaf-outer"></div>
+                <div class="leaf-extra"></div>
+            </div>
+        </div>
+        
+        <div class="corner-number top-right" aria-hidden="true">
+            <div class="number-circle">1</div>
+            <div class="leaf-decoration">
+                <div class="leaf-inner"></div>
+                <div class="leaf-outer"></div>
+                <div class="leaf-extra"></div>
+            </div>
+        </div>
+        
+        <div class="corner-number bottom-left" aria-hidden="true">
+            <div class="number-circle">1</div>
+            <div class="leaf-decoration">
+                <div class="leaf-inner"></div>
+                <div class="leaf-outer"></div>
+                <div class="leaf-extra"></div>
+            </div>
+        </div>
+        
+        <div class="corner-number bottom-right" aria-hidden="true">
+            <div class="number-circle">1</div>
+            <div class="leaf-decoration">
+                <div class="leaf-inner"></div>
+                <div class="leaf-outer"></div>
+                <div class="leaf-extra"></div>
+            </div>
+        </div>
+        
+        <!-- Main center content -->
+        <section class="center-stage" aria-label="Main content">
+            <!-- Left section -->
+            <div class="left-stage" role="region" aria-label="Magician name and stars">
+                <div class="magic-box-wrapper" aria-hidden="true">
+                    <div class="red-3d-cube"></div>
+                    <div class="floating-stars">
+                        <span class="golden-star golden-star1">★</span>
+                        <span class="golden-star golden-star2">★</span>
+                        <span class="golden-star golden-star3">★</span>
+                    </div>
+                </div>
+                <h1 class="charlie-fass-title">
+                    <span class="charlie-text">CHARLIE</span><span class="fass-text">FASS</span>
+                </h1>
+                <p class="is-mister-illusion">IS MISTER ILLUSION</p>
+            </div>
+            
+            <!-- Center portrait -->
+            <div class="portrait-stage" role="region" aria-label="Magician portrait">
+                <div class="portrait-oval-frame">
+                    <img src="images/magician-profile.png" alt="Mister Illusion">
+                </div>
+                <div class="portrait-leaves" aria-hidden="true">
+                    <div class="ornate-portrait-leaf left"></div>
+                    <div class="ornate-portrait-leaf right"></div>
+                </div>
+            </div>
+            
+            <!-- Right section -->
+            <address class="right-stage" aria-label="Contact information">
+                <div class="website-display">MisterIllusion.com</div>
+                <div class="phone-display">916-441-8059</div>
+            </address>
+        </section>
+        
+        <!-- Bottom taglines -->
+        <footer class="tagline-banner left-tagline" role="contentinfo">
+            <div class="tagline-main">Levi Tation</div>
+            <div class="tagline-sub">Magic is a tricky business</div>
+        </footer>
+        <footer class="tagline-banner right-tagline" role="contentinfo">
+            <div class="tagline-sub">A Magician is a "Presto" Digitator</div>
+        </footer>
+    </main>
+    
+    <!-- PAGE 2: BACK -->
+    <section class="page page2" role="region" aria-label="Magic Tricks You Can Do">
+        <!-- Corner stars -->
+        <div class="corner-stars-group csg-tl" aria-hidden="true">
+            <span class="star-pair">
+                <span class="star-solid">★</span>
+                <span class="star-outline">☆</span>
+            </span>
+        </div>
+        <div class="corner-stars-group csg-tr" aria-hidden="true">
+            <span class="star-pair">
+                <span class="star-solid">★</span>
+                <span class="star-outline">☆</span>
+            </span>
+        </div>
+        <div class="corner-stars-group csg-bl" aria-hidden="true">
+            <span class="star-pair">
+                <span class="star-solid">★</span>
+                <span class="star-outline">☆</span>
+            </span>
+        </div>
+        <div class="corner-stars-group csg-br" aria-hidden="true">
+            <span class="star-pair">
+                <span class="star-solid">★</span>
+                <span class="star-outline">☆</span>
+            </span>
+        </div>
+        
+        <!-- Main yellow panel -->
+        <div class="tricks-main-panel">
+            <!-- Center magic elements -->
+            <div class="magic-centerpiece-display" aria-hidden="true">
+                <div class="magic-bunny-container">
+                    <div class="magic-hat-on-bunny">🎩</div>
+                    <div class="magic-bunny">🐰</div>
+                    <div class="bunny-wand">🪄</div>
+                </div>
+            </div>
+            
+            <!-- Tricks grid -->
+            <div class="tricks-grid-layout">
+                <!-- Linking Paper Clips -->
+                <article class="magic-trick-card" aria-label="Linking Paper Clips trick">
+                    <h2 class="trick-title-row">
+                        <span class="trick-bullet" aria-hidden="true">★</span>
+                        <span class="trick-title-text">Linking Paper Clips</span>
+                    </h2>
+                    <p class="trick-description-text">Two paper clips become linked by Magic!</p>
+                    <h3 class="trick-secret-title">Secret:</h3>
+                    <p class="trick-secret-details">Fold a dollar bill into three sections as illustrated. Attach the paper clips as shown, one over the back and the center section, the second over the center and front sections. Pull on the ends of the dollar and the clips will jump off linked together!</p>
+                    <img src="images/linking-paper-clips.png" alt="Linking Paper Clips illustration" class="trick-illustration">
+                </article>
+                
+                <!-- Jumping Rubber Band -->
+                <article class="magic-trick-card" aria-label="Jumping Rubber Band trick">
+                    <h2 class="trick-title-row">
+                        <span class="trick-bullet" aria-hidden="true">☆</span>
+                        <span class="trick-title-text">Jumping Rubber Band</span>
+                    </h2>
+                    <p class="trick-description-text">A rubber band magically jumps from finger to finger!</p>
+                    <h3 class="trick-secret-title">Secret:</h3>
+                    <p class="trick-secret-details">Place the rubber band over the index and middle finger of your hand. As you close your fingers, slip them into the outstretched loop as shown. It appears to the audience that the band is around two fingers. Open your fingers and the band will jump over to your third and fourth fingers. To make it jump back, repeat the process!</p>
+                    <img src="images/jumping-rubber-band.png" alt="Jumping Rubber Band illustration" class="trick-illustration">
+                </article>
+                
+                <!-- The Money Box -->
+                <article class="magic-trick-card" aria-label="The Money Box trick">
+                    <h2 class="trick-title-row">
+                        <span class="trick-bullet" aria-hidden="true">★</span>
+                        <span class="trick-title-text">The Money Box</span>
+                    </h2>
+                    <p class="trick-description-text">A coin appears inside an empty matchbox!</p>
+                    <h3 class="trick-secret-title">Secret:</h3>
+                    <p class="trick-secret-details">The coin is hidden in the top of the box, held in place by the edge of the drawer. When the drawer is closed, the coin falls inside. Open the drawer and the coin appears.</p>
+                    <img src="images/matchbox-money-box.png" alt="The Money Box illustration" class="trick-illustration">
+                </article>
+                
+                <!-- Crayon Magic -->
+                <article class="magic-trick-card" aria-label="Crayon Magic trick">
+                    <h2 class="trick-title-row">
+                        <span class="trick-bullet" aria-hidden="true">☆</span>
+                        <span class="trick-title-text">Crayon Magic</span>
+                    </h2>
+                    <p class="trick-description-text">You name the color of a crayon handed to you behind your back!</p>
+                    <h3 class="trick-secret-title">Secret:</h3>
+                    <p class="trick-secret-details">Scrape the bottom of the crayon with your thumbnail. Bring your hand up to your forehead to concentrate and look at the color under your nail. After thinking about it, announce the color!</p>
+                    <img src="images/crayon-magic.png" alt="Crayon Magic illustration" class="trick-illustration">
+                </article>
+            </div>
+            
+            <!-- Bottom slogan -->
+            <footer class="bottom-slogan-area" role="contentinfo">
+                <span class="slogan-part slogan-easy">Easy Magic Tricks</span>
+                <span class="slogan-part slogan-youcan">You Can Do!</span>
+            </footer>
+        </div>
+    </section>
+</body>
+</html>
