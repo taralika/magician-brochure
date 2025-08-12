@@ -3,6 +3,3 @@
 
 # Editor directories
 .claude/
-
-# Temporary instruction file (can remove after setup)
-git-setup-instructions.md
